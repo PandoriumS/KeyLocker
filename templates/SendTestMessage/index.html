@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div id="send-mail-block">
+        <form method="post" id="send-mail">
+            {% csrf_token %}
+            <div id="email">
+                {{ form.email }}
+            </div>
+            <div id="mail-text">
+                {{ form.text }}
+            </div>
+            <button id="send-mail-button">Send Mail</button>
+        </form>
+    </div>
+{% endblock %}

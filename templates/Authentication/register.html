@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div id="auth-form">
+        <form method="post" novalidate>
+            {% csrf_token %}
+            <div id="img-fake-block">
+                <div id="visible-block"></div>
+                <div id="avatar-loader">
+                    {{ form.avatar }}
+                </div>
+            </div>
+            <div class="auth-input" id="username-input">
+                {{ form.username }}
+            </div>
+            <div class="auth-input" id="email-input">
+                {{ form.email }}
+            </div>
+            <div class="auth-input" id="password-input">
+                {{ form.password }}
+            </div>
+            <div class="auth-input" id="check-password-input">
+                {{ form.check_password }}
+            </div>
+            <div class="auth-input" id="button-input">
+                <button id="auth-button">{{ _("Sign in") }}</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

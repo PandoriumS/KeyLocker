@@ -1,0 +1,5 @@
+LockerRoom/settings/local.py
+.idea
+/*/migrations/
+/db.*
+*/__pycache__
