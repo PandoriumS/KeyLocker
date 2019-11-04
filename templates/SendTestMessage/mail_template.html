@@ -1,0 +1,62 @@
+<style>
+    #tab {
+        width: 500px;
+        height: 500px;
+        background: #202020;
+        color: #ffffff;
+    }
+
+
+    #message-header {
+        height: 20%;
+        border-bottom: 1px solid white;
+        background-image: url("https://raw.githubusercontent.com/Shvaindahder/KeyLocker/master/static/img/mail_imgs/ichi.png");
+    }
+
+
+    #message-body {
+        height: 40%;
+    }
+
+
+    #left {
+        width: 40%;
+        background-image: url("https://raw.githubusercontent.com/Shvaindahder/KeyLocker/master/static/img/mail_imgs/ni.png");
+    }
+
+
+    #right {
+        width: 60%;
+        background-image: url("https://raw.githubusercontent.com/Shvaindahder/KeyLocker/master/static/img/mail_imgs/san.png");
+    }
+
+
+    #message-footer {
+        height: 40%;
+        background-image: url("https://raw.githubusercontent.com/Shvaindahder/KeyLocker/master/static/img/mail_imgs/youn.png");
+    }
+</style>
+
+<table id="tab">
+    <tbody>
+    <tr id="message-header">
+        <th colspan="2"><h1>Привет, {{ username }}</h1></th>
+    </tr>
+    <tr id="message-body">
+        <th id="left">
+            <img src="https://raw.githubusercontent.com/Shvaindahder/KeyLocker/master/static/img/mail_imgs/lock.png"
+                 alt="" width="190px" height="190px">
+        </th>
+        <th id="right">
+            <h1>Safe Room</h1>
+        </th>
+    </tr>
+    <tr id="message-footer">
+        <th colspan="2">
+            <span>
+                {{ text }}
+            </span>
+        </th>
+    </tr>
+    </tbody>
+</table>
