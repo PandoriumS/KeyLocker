@@ -2,7 +2,7 @@ appnope==0.1.0
 backcall==0.1.0
 cycler==0.10.0
 decorator==4.4.0
-Django==2.2.6
+Django==2.2.13
 imageio==2.6.1
 ipython==7.9.0
 ipython-genutils==0.2.0
